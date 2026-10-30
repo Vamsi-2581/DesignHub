@@ -46,5 +46,4 @@ test("announces the filtered font count after search input settles", async ({ pa
   await search.fill("open sans");
   await expect(page.getByRole("option")).toHaveCount(1);
   await expect(announcement).toHaveText("1 font");
-
 });
